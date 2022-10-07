@@ -45,6 +45,9 @@ nav div {
 section {
     height: 85vh;
     width: 100%;
+}
+
+.banner {
     background: url('./media/banner.png') center no-repeat;
     background-size: cover;
     position: relative;
@@ -53,10 +56,14 @@ section {
     align-items: flex-end;
 }
 
-section p {
+.banner p {
     color: #fff;
     margin-bottom: 5%;
     font-size: 2vw;
     font-weight: 400;
     font-style: italic;
 }
+
+/* .acerca {
+    display: none;
+} */
