@@ -22,6 +22,7 @@ header {
 
 h1 {
     cursor: pointer;
+    font-weight: 500;
 }
 
 nav {
@@ -30,23 +31,32 @@ nav {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    /* font-size: 3vh; */
+    font-size: 1.5vw;
 }
 
 nav div {
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 section {
     height: 85vh;
     width: 100%;
-    background: url('./media/banner.jpg') center no-repeat;
+    background: url('./media/banner.png') center no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+section p {
+    color: #fff;
+    margin-bottom: 5%;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
 }
