@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+    font-family: Poppins; 
     box-sizing: border-box;
 }
 
@@ -31,7 +31,6 @@ nav {
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    /* font-size: 3vh; */
     font-size: 1.5vw;
 }
 
@@ -45,13 +44,14 @@ nav div {
 section {
     height: 85vh;
     width: 100%;
+    padding: 0 10%;
+    display: flex;
 }
 
 .banner {
     background: url('./media/banner.png') center no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: flex-end;
 }
@@ -64,6 +64,72 @@ section {
     font-style: italic;
 }
 
-/* .acerca {
-    display: none;
-} */
+.acerca {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: white;
+}
+
+.acerca h2 {
+    font-size: 5vw;
+}
+
+.acerca p {
+    font-size: 2vw;
+    text-align: justify;
+}
+
+.horario {
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    background: url('./media/horarios-background.png') center no-repeat;
+    background-size: cover;
+}
+
+.precios {
+    justify-content: center;
+    align-items: center;
+    background: url('./media/precios-background.png') center no-repeat;
+    background-size: cover;
+}
+
+.horario table thead tr, .precios table thead tr {
+    background-color: rgba(67, 66, 66, 0.766);
+}
+
+.horario table thead tr th, .precios table thead tr th {
+    padding: 0 10vw;
+}
+
+.horario tbody, .precios tbody {
+    text-align: center;
+}
+
+.precios>div {
+    height: 25%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precios>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precios div h3 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.precios div p {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
