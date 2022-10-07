@@ -11,9 +11,9 @@ const horario = document.querySelector('.horario')
 const precios = document.querySelector('.precios')
 const contacto = document.querySelector('.contacto')
 
-const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
+// const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
 const sections = [acerca, horario, precios, contacto]
-const dictionary = { acercaBtn: acerca, horarioBtn: horario, preciosBtn: precios, contactoBtn: contacto }
+// const dictionary = { acercaBtn: acerca, horarioBtn: horario, preciosBtn: precios, contactoBtn: contacto }
 
 function displaySection(section) {
     banner.style.display = 'none'
