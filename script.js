@@ -11,9 +11,8 @@ const horario = document.querySelector('.horario')
 const precios = document.querySelector('.precios')
 const contacto = document.querySelector('.contacto')
 
-// const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
+const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
 const sections = [acerca, horario, precios, contacto]
-// const dictionary = { acercaBtn: acerca, horarioBtn: horario, preciosBtn: precios, contactoBtn: contacto }
 
 function displaySection(section) {
     banner.style.display = 'none'
@@ -25,23 +24,37 @@ function displaySection(section) {
 
 displaySection(banner)
 
+function clickedButton (button) {
+    buttons.forEach(button => {
+        button.style.textDecoration = 'none'
+    })
+    button.style.textDecoration = 'underline'
+}
+
 h1.addEventListener('click', () => {
     displaySection(banner)
+    buttons.forEach(button => {
+        button.style.textDecoration = 'none'
+    })
 })
 
 acercaBtn.addEventListener('click', () => {
     displaySection(acerca)
+    clickedButton(acercaBtn)
 })
 
 horarioBtn.addEventListener('click', () => {
     displaySection(horario)
+    clickedButton(horarioBtn)
 })
 
 preciosBtn.addEventListener('click', () => {
     displaySection(precios)
+    clickedButton(preciosBtn)
 })
 
 contactoBtn.addEventListener('click', () => {
     displaySection(contacto)
+    clickedButton(contactoBtn)
 })
 

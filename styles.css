@@ -41,6 +41,10 @@ nav div {
     align-items: center;
 }
 
+nav div:hover {
+    font-weight: 600;
+}
+
 section {
     height: 85vh;
     width: 100%;
