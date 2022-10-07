@@ -48,6 +48,8 @@ section {
     display: flex;
 }
 
+/* BANNER */
+
 .banner {
     background: url('./media/banner.png') center no-repeat;
     background-size: cover;
@@ -72,6 +74,8 @@ section {
     color: white;
 }
 
+/* ACERCA */
+
 .acerca h2 {
     font-size: 5vw;
 }
@@ -81,6 +85,8 @@ section {
     text-align: justify;
 }
 
+/* HORARIO */
+
 .horario {
     justify-content: center;
     align-items: center;
@@ -89,23 +95,25 @@ section {
     background-size: cover;
 }
 
+.horario table thead tr {
+    background-color: rgba(67, 66, 66, 0.766);
+}
+
+.horario table thead tr th {
+    padding: 0 10vw;
+}
+
+.horario tbody {
+    text-align: center;
+}
+
+/* PRECIOS */
+
 .precios {
     justify-content: center;
     align-items: center;
     background: url('./media/precios-background.png') center no-repeat;
     background-size: cover;
-}
-
-.horario table thead tr, .precios table thead tr {
-    background-color: rgba(67, 66, 66, 0.766);
-}
-
-.horario table thead tr th, .precios table thead tr th {
-    padding: 0 10vw;
-}
-
-.horario tbody, .precios tbody {
-    text-align: center;
 }
 
 .precios>div {
@@ -132,4 +140,12 @@ section {
 .precios div p {
     font-size: 1.5vw;
     font-weight: 300;
+}
+
+.contacto {
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    background: url('./media/contacto-background.png') center no-repeat;
+    background-size: cover;
 }
