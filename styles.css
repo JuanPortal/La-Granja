@@ -5,15 +5,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #252525;
+}
+
 header {
     color: white;
     background-color: #252525;
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     justify-content: space-between;
     align-items: center;
-    /* background-color: antiquewhite; */
     padding: 0 4%;
 }
 
@@ -25,11 +28,25 @@ nav {
     display: flex;
     width: 35%;
     height: 100%;
-    /* background-color: red; */
     justify-content: space-between;
     align-items: center;
 }
 
 nav div {
     cursor: pointer;
+}
+
+section {
+    height: 85vh;
+    width: 100%;
+    background: url('./media/banner.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
