@@ -23,6 +23,7 @@ header {
 }
 
 h1 {
+    font-size: clamp(40px, 3vw, 55px);
     cursor: pointer;
     font-weight: 500;
 }
@@ -33,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: clamp(15px, 1.5vw, 50px);
+    font-size: clamp(15px, 1.5vw, 40px);
 }
 
 nav div {
@@ -86,7 +87,7 @@ section {
 .banner p {
     color: #fff;
     margin-bottom: 5%;
-    font-size: 2vw;
+    font-size: clamp(30px, 2vw, 50px);
     font-weight: 400;
     font-style: italic;
 }
@@ -95,18 +96,19 @@ section {
 
 .acerca {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
     background: url('./media/acerca-background.png') center no-repeat;
     background-size: cover;
 }
 
 .acerca h2 {
-    font-size: 4.3vw;
+    font-size: clamp(50px, 4vw, 70px);
 }
 
 .acerca p {
-    font-size: .7vw;
+    font-size: clamp(15px, 1.2vw, 25px);
     text-align: justify;
 }
 
@@ -226,8 +228,16 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    section {
+        height: 78vh
+    }
+
     .horario {
         font-size: clamp(15px, 1.5vw, 50px);
+        gap: 30px;
+    }
+
+    .acerca {
         gap: 30px;
     }
 }
