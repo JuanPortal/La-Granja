@@ -2,17 +2,19 @@ const h1 = document.querySelector('h1')
 
 const acercaBtn = document.querySelector('.acerca-btn')
 const horarioBtn = document.querySelector('.horario-btn')
-const preciosBtn = document.querySelector('.precios-btn')
+// const preciosBtn = document.querySelector('.precios-btn')
 const contactoBtn = document.querySelector('.contacto-btn')
 
 const banner = document.querySelector('.banner')
 const acerca = document.querySelector('.acerca')
 const horario = document.querySelector('.horario')
-const precios = document.querySelector('.precios')
+// const precios = document.querySelector('.precios')
 const contacto = document.querySelector('.contacto')
 
-const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
-const sections = [acerca, horario, precios, contacto]
+// const buttons = [acercaBtn, horarioBtn, preciosBtn, contactoBtn]
+// const sections = [acerca, horario, precios, contacto]
+const buttons = [acercaBtn, horarioBtn, contactoBtn]
+const sections = [acerca, horario, contacto]
 
 function displaySection(section) {
     banner.style.display = 'none'
@@ -48,13 +50,29 @@ horarioBtn.addEventListener('click', () => {
     clickedButton(horarioBtn)
 })
 
-preciosBtn.addEventListener('click', () => {
-    displaySection(precios)
-    clickedButton(preciosBtn)
-})
+// preciosBtn.addEventListener('click', () => {
+//     displaySection(precios)
+//     clickedButton(preciosBtn)
+// })
 
 contactoBtn.addEventListener('click', () => {
     displaySection(contacto)
     clickedButton(contactoBtn)
 })
 
+// HAMBURGER MENU
+
+const hamburger = document.querySelector('.hamburger')
+const nav = document.querySelector('nav')
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active')
+    nav.classList.toggle('active')
+})
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        hamburger.classList.toggle('active')
+        nav.classList.toggle('active')
+    })
+})
