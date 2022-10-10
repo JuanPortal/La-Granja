@@ -16,10 +16,10 @@ header {
     background-color: #252525;
     width: 100%;
     height: 15vh;
+    padding: 0 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4%;
 }
 
 h1 {
@@ -114,29 +114,28 @@ section {
 
 .horario {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    gap: 50px;
+    font-size: clamp(20px, 2vw, 50px);
     background: url('./media/horarios-background.png') center no-repeat;
     background-size: cover;
 }
 
 .horario table thead tr th{
-    background-color: rgba(67, 66, 66, 0.766);
-    /* color: #252525; */
-    /* background-color: #252525ce; */
-    /* color: #fff; */
+    background-color: #252525ce;
+    color: #fff;
 }
 
 .horario table thead tr th {
     padding: 0 10vw;
 }
 
-.horario table thead tr th:first-child {
+.horario table thead tr .top-left {
     border-radius: 30px 0 0 0;
 }
 
-.horario table thead tr th:last-child {
+.horario table thead tr .top-right {
     border-radius: 0 30px 0 0;
 }
 
@@ -145,37 +144,15 @@ section {
 }
 
 .horario tbody tr td {
-    background-color: rgba(225, 225, 225, 0.55);
+    background-color: #e1e1e18c;
 }
 
-.horario tbody tr td:first-child {
+.horario tbody tr .bottom-left {
     border-radius: 0 0 0 30px;
 }
 
-.horario tbody tr td:last-child {
+.horario tbody tr .bottom-right {
     border-radius: 0 0 30px 0;
-}
-
-.horario .prices {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 25%;
-    background-color: rgba(225, 225, 225, 0.55);
-    border-radius: 30px;
-    padding: 30px;
-}
-
-.horario .prices div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.horario .prices div h3 {
-    background-color: rgba(67, 66, 66, 0.766);
 }
 
 /* CONTACTO */
@@ -183,7 +160,7 @@ section {
 .contacto {
     justify-content: space-around;
     align-items: center;
-    font-size: 2vw;
+    font-size: clamp(30px, 3vw, 60px);
     background: url('./media/contacto-background.png') center no-repeat;
     background-size: cover;
 }
@@ -247,5 +224,10 @@ section {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .horario {
+        font-size: clamp(15px, 1.5vw, 50px);
+        gap: 30px;
     }
 }
