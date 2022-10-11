@@ -74,17 +74,17 @@ section {
     display: flex;
 }
 
-/* BANNER */
+/* portada */
 
-.banner {
-    background: url('./media/banner.png') center no-repeat;
+.portada {
+    background: url('./media/portada.png') center no-repeat;
     background-size: cover;
     position: relative;
     justify-content: center;
     align-items: flex-end;
 }
 
-.banner p {
+.portada p {
     color: #fff;
     margin-bottom: 5%;
     font-size: clamp(30px, 2vw, 50px);
