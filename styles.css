@@ -119,9 +119,12 @@ section {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    font-size: clamp(20px, 2vw, 50px);
     background: url('./media/horarios-background.png') center no-repeat;
     background-size: cover;
+}
+
+.horario table {
+    font-size: clamp(15px, 2vw, 50px);
 }
 
 .horario table thead tr th{
