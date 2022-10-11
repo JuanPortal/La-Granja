@@ -195,6 +195,15 @@ section {
 
 /* RESPONSIVE */
 
+@media (max-width: 850px) {
+    .contacto {
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         background-color: #252525;
@@ -240,11 +249,16 @@ section {
     .acerca {
         gap: 30px;
     }
+}
 
-    .contacto {
-        flex-direction: column;
-        align-items: space-around;
-        justify-content: center;
-        gap: 30px;
+@media (max-width: 500px) {
+    .acerca p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .acerca p {
+        font-size: 10px;
     }
 }
