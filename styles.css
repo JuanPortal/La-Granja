@@ -183,8 +183,7 @@ section {
 
 .contacto>div p {
     text-align: center;
-    /* font-size: clamp(30px, 1.4vw, 60px); */
-    font-size: 20px;
+    font-size: clamp(25px, 1.5vw, 40px);
 }
 
 .contacto .redes a {
