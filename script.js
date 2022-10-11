@@ -57,14 +57,13 @@ const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('nav')
 
 hamburger.addEventListener('click', () => {
-    console.log('clicked')
     hamburger.classList.toggle('active')
     nav.classList.toggle('active')
 })
 
-// buttons.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         hamburger.classList.remove('active')
-//         nav.classList.remove('active')
-//     })
-// })
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        hamburger.classList.remove('active')
+        nav.classList.remove('active')
+    })
+})
