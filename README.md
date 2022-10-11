@@ -1,3 +1,4 @@
 La Granja BJJ website in progress...
 
-![banner](https://user-images.githubusercontent.com/78442505/194470230-2d42caf3-a8f3-4dc0-af99-9a185b3ea66d.jpg)
+![imagen](https://user-images.githubusercontent.com/78442505/195175688-156957f9-ba4b-4434-ab11-89dbbb7e750b.png)
+
